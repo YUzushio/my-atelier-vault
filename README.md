@@ -4,6 +4,10 @@
 Obsidian で Backroom に制作ログ・タスクを書き、Agent Skills（**Cursor** · **VS Code（GitHub Copilot）** · **Claude Code**）で横断管理。  
 [Gallery](https://github.com/YUzushio/yuzushio.github.io) 連携機能付き — **個人ポートフォリオと作業管理をひとつの Vault で整理できる**のが強みです。
 
+![Wiki TODO Dashboard — タスクノート](docs/images/wiki-todo-dashboard-task-notes.png)
+
+*Wiki TODO ダッシュボード（`@wiki-todo-query`）— プロジェクト横断のタスクノート · 優先度 · 状態をブラウザで一覧*
+
 [![YUzushio Gallery — Feed 画面の例](docs/images/gallery-feed-example.png)](https://yuzushio.github.io/)
 
 *Gallery 公開例（[yuzushio.github.io](https://yuzushio.github.io/)）— Wiki の `gallery: true` プロジェクトを Feed / Drill / Timeline / Category で一覧。テンプレ fork: [YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io)*
@@ -76,12 +80,11 @@ node .cursor/skills/wiki-setup/scripts/setup.mjs
 node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs
 ```
 
-`http://127.0.0.1:47847/` でブラウザ表示。
+`http://127.0.0.1:47847/` でブラウザ表示。README 上部にも画面例があります。
 
-| 画面 | 内容 |
-|------|------|
-| タスクノート | ![タスクノート](.cursor/skills/wiki-todo-query/dashboard/examples/wiki-todo-dashboard-task-notes.png) |
-| Wiki チェックボックス | ![チェックボックス](.cursor/skills/wiki-todo-query/dashboard/examples/wiki-todo-dashboard-checkboxes.png) |
+![Wiki チェックボックス — プロジェクト別 TODO](docs/images/wiki-todo-dashboard-checkboxes.png)
+
+*Backroom 横断の `- [ ]` チェックボックス — ノートパス・行番号付き*
 
 ---
 
