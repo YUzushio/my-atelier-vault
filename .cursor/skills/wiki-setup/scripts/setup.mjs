@@ -160,7 +160,7 @@ async function main() {
   }
 
   console.log("\nNext steps:");
-  console.log("1. Open this folder in Obsidian");
+  console.log(`1. Obsidian: このフォルダ（Cloneしたフォルダ）を vault として開く → ${VAULT_ROOT}`);
   console.log("2. Community plugins → Obsidian Git → remote:", config.gitRemote);
   console.log("3. @wiki-todo-query — open-dashboard.mjs でダッシュボード");
   console.log("4. Gallery: https://github.com/YUzushio/yuzushio.github.io");

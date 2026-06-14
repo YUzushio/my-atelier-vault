@@ -1,5 +1,7 @@
 # my-atelier-vault
 
+**日本語** · [English (README.en.md)](README.en.md)
+
 **音楽 · イラスト · 動画 · 開発 · 記事執筆 · 書籍（技術同人誌など）** など、**様々な分野・プロジェクトに手を出す人向け**の、自己作業管理 Wiki テンプレートです。  
 Obsidian で Backroom に制作ログ・タスクを書き、Agent Skills（**Cursor** · **VS Code（GitHub Copilot）** · **Claude Code**）で横断管理。  
 [Gallery](https://yuzushio.github.io/) 連携機能付き — **個人ポートフォリオと作業管理をひとつの Vault で整理できる**のが強みです。
@@ -50,7 +52,19 @@ Skills の正本は `.cursor/skills/` です。Claude Code 向けに `.claude/sk
 ### 1. Fork & clone
 
 1. [github.com/YUzushio/my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) を [GitHub で fork](https://github.com/YUzushio/my-atelier-vault/fork)
-2. clone して **Cursor / VS Code / Claude Code** および **Obsidian** で開く
+2. clone（`<your-account>` は自分の GitHub ユーザー名）:
+
+```bash
+# macOS / Linux
+git clone https://github.com/<your-account>/my-atelier-vault.git ~/my-atelier-vault
+cd ~/my-atelier-vault
+
+# Windows (PowerShell)
+git clone https://github.com/<your-account>/my-atelier-vault.git C:\Users\<you>\my-atelier-vault
+cd C:\Users\<you>\my-atelier-vault
+```
+
+3. **Cursor / VS Code / Claude Code** では **このフォルダ（Cloneしたフォルダ）** をワークスペースとして開く
 
 ### 2. セットアップ
 
@@ -73,7 +87,7 @@ node .cursor/skills/wiki-setup/scripts/setup.mjs
 
 ![Backroom 索引の例](docs/images/obsidian-backroom-example.png)
 
-1. このフォルダを vault として開く
+1. **このフォルダ（Cloneしたフォルダ）** を Obsidian の vault として開く（**Open folder as vault** · `Backroom/` ではなくリポジトリ直下）
 2. **Settings → Community plugins → Turn off restricted mode**
 3. **Obsidian Git** をインストール
 4. Remote を自分の fork URL に設定

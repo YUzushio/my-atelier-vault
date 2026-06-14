@@ -48,7 +48,7 @@ node .cursor/skills/wiki-setup/scripts/setup.mjs --non-interactive \
 
 ### 3. Obsidian
 
-1. このフォルダを vault として開く
+1. **このフォルダ（Cloneしたフォルダ）** を Obsidian の vault として開く（**Open folder as vault** · `Backroom/` ではなくリポジトリ直下）
 2. **Settings → Community plugins → Turn off restricted mode**
 3. **Obsidian Git** をインストール
 4. Remote URL を `vault.config.json` の `gitRemote` に設定
