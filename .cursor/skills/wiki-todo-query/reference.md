@@ -13,15 +13,20 @@
 
 URL: `http://127.0.0.1:47847/`
 
-### 画面イメージ（プレースホルダ）
+### 画面例
 
-セットアップ後、`node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs` で実際のダッシュボードが生成されます。
+実際の Vault（Atelier-Vault）で `@wiki-todo-query` を実行したスクリーンショットです。  
+fork 後は自分の Backroom 内容が表示されます。
 
-![Wiki TODO Dashboard プレースホルダ](dashboard/examples/wiki-todo-dashboard-placeholder.svg)
+![Wiki TODO Dashboard — タスクノート](dashboard/examples/wiki-todo-dashboard-task-notes.png)
 
-- 上部: 統計カード（Wiki TODO **N 件（例）** · プロジェクト **M** · タスクノート **K**）
-- 着手提案: P1 プロジェクトの実施中タスクをハイライト
-- プロジェクトチップで絞り込み · 検索ボックスでノート横断検索
+- プロジェクトチップ · タスクノート（`tasks/*.md`）の状態・優先度・難易度
+
+![Wiki TODO Dashboard — Wiki チェックボックス](dashboard/examples/wiki-todo-dashboard-checkboxes.png)
+
+- プロジェクト別に Backroom 横断 `- [ ]` · ノートパス・行番号付き
+
+起動: `node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs`
 
 ## よくあるフィルタ
 

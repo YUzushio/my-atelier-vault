@@ -35,7 +35,7 @@ node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs
 
 - Backroom をスキャンして `dashboard/latest.html` を生成
 - ローカルサーバー `http://127.0.0.1:47847/` で表示
-- 画面例（プレースホルダ）: [reference.md](reference.md)
+- 画面例: [reference.md](reference.md) · `dashboard/examples/wiki-todo-dashboard-task-notes.png`
 - `@morning-briefing` からも自動キックされる
 - HTML のみ再生成: `--build`
 

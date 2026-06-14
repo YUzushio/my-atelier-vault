@@ -46,7 +46,10 @@ node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs
 
 `http://127.0.0.1:47847/` でブラウザ表示。
 
-![Wiki TODO Dashboard プレースホルダ](.cursor/skills/wiki-todo-query/dashboard/examples/wiki-todo-dashboard-placeholder.svg)
+| 画面 | 内容 |
+|------|------|
+| タスクノート | ![タスクノート](.cursor/skills/wiki-todo-query/dashboard/examples/wiki-todo-dashboard-task-notes.png) |
+| Wiki チェックボックス | ![チェックボックス](.cursor/skills/wiki-todo-query/dashboard/examples/wiki-todo-dashboard-checkboxes.png) |
 
 ---
 
