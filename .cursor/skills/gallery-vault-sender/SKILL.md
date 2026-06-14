@@ -66,8 +66,8 @@ Gallery リポで `@gallery-vault-receiver` を実行。
 
 ## Gallery テンプレ
 
-- Fork: [YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io)
-- 公開例: [yuzushio.github.io](https://yuzushio.github.io/)
+- 公開サイト: [yuzushio.github.io](https://yuzushio.github.io/)
+- Fork: [github.com/YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io/fork)
 
 ## 参照
 

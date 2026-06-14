@@ -62,7 +62,8 @@ node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs --build
 
 ### 5. Gallery（任意）
 
-- テンプレ fork: [YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io)
+- 公開サイト: [yuzushio.github.io](https://yuzushio.github.io/)
+- テンプレ fork: [github.com/YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io/fork)
 - Wiki: `@gallery-vault-sender` · Gallery: `@gallery-vault-receiver`
 
 ### 6. Advanced（任意 · 後からでも可）

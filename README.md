@@ -2,7 +2,7 @@
 
 **音楽 · イラスト · 動画 · 開発 · 記事執筆 · 書籍（技術同人誌など）** など、**様々な分野・プロジェクトに手を出す人向け**の、自己作業管理 Wiki テンプレートです。  
 Obsidian で Backroom に制作ログ・タスクを書き、Agent Skills（**Cursor** · **VS Code（GitHub Copilot）** · **Claude Code**）で横断管理。  
-[Gallery](https://github.com/YUzushio/yuzushio.github.io) 連携機能付き — **個人ポートフォリオと作業管理をひとつの Vault で整理できる**のが強みです。
+[Gallery](https://yuzushio.github.io/) 連携機能付き — **個人ポートフォリオと作業管理をひとつの Vault で整理できる**のが強みです。
 
 ![Obsidian — Backroom 索引（`Backroom/_index.md`）](docs/images/obsidian-backroom-example.png)
 
@@ -14,9 +14,9 @@ Obsidian で Backroom に制作ログ・タスクを書き、Agent Skills（**Cu
 
 [![YUzushio Gallery — Feed 画面の例](docs/images/gallery-feed-example.png)](https://yuzushio.github.io/)
 
-*Gallery 公開例（[yuzushio.github.io](https://yuzushio.github.io/)）— Wiki の `gallery: true` プロジェクトを Feed / Drill / Timeline / Category で一覧。テンプレ fork: [YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io)*
+*Gallery — 公開サイト [yuzushio.github.io](https://yuzushio.github.io/) · テンプレは [GitHub で fork](https://github.com/YUzushio/yuzushio.github.io/fork)（`github.com/YUzushio/yuzushio.github.io`）*
 
-- **テンプレリポ:** このリポジトリ（`YUzushio/my-atelier-vault`）
+- **テンプレリポ（Wiki）:** [github.com/YUzushio/my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) → [GitHub で fork](https://github.com/YUzushio/my-atelier-vault/fork)
 - **作者の private 正本:** 別リポ [`atelier-vault`](https://github.com/YUzushio/atelier-vault)（非公開運用想定）
 
 Copyright (c) YUzushio · [MIT License](LICENSE)
@@ -52,7 +52,7 @@ Skills の正本は `.cursor/skills/` です。Claude Code 向けに `.claude/sk
 
 ### 1. Fork & clone
 
-1. [YUzushio/my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) を GitHub で **fork**
+1. [github.com/YUzushio/my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) を [GitHub で fork](https://github.com/YUzushio/my-atelier-vault/fork)
 2. clone して **Cursor / VS Code / Claude Code** および **Obsidian** で開く
 
 ### 2. セットアップ
@@ -153,8 +153,8 @@ node .cursor/skills/wiki-setup-advanced/scripts/setup-advanced.mjs
 
 | | URL |
 |---|-----|
-| **Fork テンプレ** | [github.com/YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io) |
-| **公開例** | [yuzushio.github.io](https://yuzushio.github.io/) |
+| **Fork テンプレ（GitHub リポ）** | [github.com/YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io) · [fork](https://github.com/YUzushio/yuzushio.github.io/fork) |
+| **公開サイト（GitHub Pages）** | [yuzushio.github.io](https://yuzushio.github.io/) |
 
 ### フロー
 
