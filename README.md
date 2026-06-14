@@ -4,6 +4,10 @@
 Obsidian で Backroom に制作ログ・タスクを書き、Agent Skills（**Cursor** · **VS Code（GitHub Copilot）** · **Claude Code**）で横断管理。  
 [Gallery](https://github.com/YUzushio/yuzushio.github.io) 連携機能付き — **個人ポートフォリオと作業管理をひとつの Vault で整理できる**のが強みです。
 
+[![YUzushio Gallery — Feed 画面の例](docs/images/gallery-feed-example.png)](https://yuzushio.github.io/)
+
+*Gallery 公開例（[yuzushio.github.io](https://yuzushio.github.io/)）— Wiki の `gallery: true` プロジェクトを Feed / Drill / Timeline / Category で一覧。テンプレ fork: [YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io)*
+
 - **テンプレリポ:** このリポジトリ（`YUzushio/my-atelier-vault`）
 - **作者の private 正本:** 別リポ [`atelier-vault`](https://github.com/YUzushio/atelier-vault)（非公開運用想定）
 
