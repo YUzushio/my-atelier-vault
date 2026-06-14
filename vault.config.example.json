@@ -1,0 +1,15 @@
+{
+  "vaultName": "My Atelier Vault",
+  "author": "Your Name",
+  "homeRoot": "C:/Users/you",
+  "gitRemote": "https://github.com/you/my-atelier-vault.git",
+  "galleryRepo": "https://github.com/you/your-gallery.git",
+  "gallerySiteUrl": "https://you.github.io/",
+  "projectPriorities": {
+    "sample-side-work": 1,
+    "sample-product": 2,
+    "sample-company": 3,
+    "sample-open-project": 4,
+    "sample-sns-hub": 4
+  }
+}
