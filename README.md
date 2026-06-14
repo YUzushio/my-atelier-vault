@@ -4,9 +4,9 @@
 Obsidian で Backroom に制作ログ・タスクを書き、Agent Skills（**Cursor** · **VS Code（GitHub Copilot）** · **Claude Code**）で横断管理。  
 [Gallery](https://github.com/YUzushio/yuzushio.github.io) 連携機能付き — **個人ポートフォリオと作業管理をひとつの Vault で整理できる**のが強みです。
 
-![Wiki TODO Dashboard — タスクノート](docs/images/wiki-todo-dashboard-task-notes.png)
+![Wiki TODO Dashboard — 概要（統計 · 着手提案 · フィルタ）](docs/images/wiki-todo-dashboard-overview.png)
 
-*Wiki TODO ダッシュボード（`@wiki-todo-query`）— プロジェクト横断のタスクノート · 優先度 · 状態をブラウザで一覧*
+*Wiki TODO ダッシュボード（`@wiki-todo-query`）— 未完了件数 · 着手提案 · プロジェクト別フィルタ*
 
 [![YUzushio Gallery — Feed 画面の例](docs/images/gallery-feed-example.png)](https://yuzushio.github.io/)
 
@@ -80,7 +80,11 @@ node .cursor/skills/wiki-setup/scripts/setup.mjs
 node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs
 ```
 
-`http://127.0.0.1:47847/` でブラウザ表示。README 上部にも画面例があります。
+`http://127.0.0.1:47847/` でブラウザ表示。README 上部に概要画面があります。
+
+![Wiki TODO Dashboard — タスクノート](docs/images/wiki-todo-dashboard-task-notes.png)
+
+*タスクノート（`tasks/*.md`）— 状態 · 優先度 · 難易度*
 
 ![Wiki チェックボックス — プロジェクト別 TODO](docs/images/wiki-todo-dashboard-checkboxes.png)
 

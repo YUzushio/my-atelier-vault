@@ -18,13 +18,17 @@ URL: `http://127.0.0.1:47847/`
 実際の Vault（Atelier-Vault）で `@wiki-todo-query` を実行したスクリーンショットです。  
 fork 後は自分の Backroom 内容が表示されます。
 
+![Wiki TODO Dashboard — 概要](dashboard/examples/wiki-todo-dashboard-overview.png)
+
+- 統計カード · 着手提案 · プロジェクトチップで絞り込み · 検索
+
 ![Wiki TODO Dashboard — タスクノート](dashboard/examples/wiki-todo-dashboard-task-notes.png)
 
-- プロジェクトチップ · タスクノート（`tasks/*.md`）の状態・優先度・難易度
+- タスクノート（`tasks/*.md`）の状態 · 優先度 · 難易度
 
 ![Wiki TODO Dashboard — Wiki チェックボックス](dashboard/examples/wiki-todo-dashboard-checkboxes.png)
 
-- プロジェクト別に Backroom 横断 `- [ ]` · ノートパス・行番号付き
+- プロジェクト別に Backroom 横断 `- [ ]` · ノートパス · 行番号付き
 
 起動: `node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs`
 
