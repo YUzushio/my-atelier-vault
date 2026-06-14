@@ -4,6 +4,10 @@
 Obsidian で Backroom に制作ログ・タスクを書き、Agent Skills（**Cursor** · **VS Code（GitHub Copilot）** · **Claude Code**）で横断管理。  
 [Gallery](https://github.com/YUzushio/yuzushio.github.io) 連携機能付き — **個人ポートフォリオと作業管理をひとつの Vault で整理できる**のが強みです。
 
+![Obsidian — Backroom 索引（`Backroom/_index.md`）](docs/images/obsidian-backroom-example.png)
+
+*Obsidian で Vault を開いた画面 — Open / Private / Closed でプロジェクトを索引（公開例: 作者の [Atelier-Vault](https://github.com/YUzushio/atelier-vault)）*
+
 ![Wiki TODO Dashboard — 概要（統計 · 着手提案 · フィルタ）](docs/images/wiki-todo-dashboard-overview.png)
 
 *Wiki TODO ダッシュボード（`@wiki-todo-query`）— 未完了件数 · 着手提案 · プロジェクト別フィルタ*
@@ -68,6 +72,8 @@ node .cursor/skills/wiki-setup/scripts/setup.mjs
 `vault.config.json` が生成され、`Backroom/` の `{{HOME_ROOT}}` 等が置換されます。
 
 ### 3. Obsidian
+
+![Backroom 索引の例](docs/images/obsidian-backroom-example.png)
 
 1. このフォルダを vault として開く
 2. **Settings → Community plugins → Turn off restricted mode**
