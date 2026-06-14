@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2840"/>
+      <stop offset="100%" style="stop-color:#0f1419"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="url(#bg)"/>
+  <rect x="24" y="24" width="912" height="56" rx="8" fill="#1a2332" stroke="#2d3a4f"/>
+  <text x="40" y="58" fill="#e7ecf3" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600">Wiki TODO Dashboard</text>
+  <text x="40" y="78" fill="#8b9cb3" font-family="Segoe UI, sans-serif" font-size="12">My Atelier Vault / Backroom · ×ìü¹ÛëÀ</text>
+  <rect x="24" y="96" width="200" height="72" rx="10" fill="#1a2332" stroke="#2d3a4f"/>
+  <rect x="236" y="96" width="200" height="72" rx="10" fill="#1a2332" stroke="#2d3a4f"/>
+  <rect x="448" y="96" width="200" height="72" rx="10" fill="#1a2332" stroke="#2d3a4f"/>
+  <rect x="660" y="96" width="276" height="72" rx="10" fill="#1a2332" stroke="#2d3a4f"/>
+  <text x="40" y="120" fill="#8b9cb3" font-size="11" font-family="Segoe UI, sans-serif">Wiki TODO</text>
+  <text x="40" y="150" fill="#e7ecf3" font-size="28" font-weight="700" font-family="Segoe UI, sans-serif">N</text>
+  <text x="252" y="120" fill="#8b9cb3" font-size="11" font-family="Segoe UI, sans-serif">×í¸§¯È</text>
+  <text x="252" y="150" fill="#e7ecf3" font-size="28" font-weight="700" font-family="Segoe UI, sans-serif">M</text>
+  <text x="464" y="120" fill="#8b9cb3" font-size="11" font-family="Segoe UI, sans-serif">¿¹¯ÎüÈ</text>
+  <text x="464" y="150" fill="#e7ecf3" font-size="28" font-weight="700" font-family="Segoe UI, sans-serif">K</text>
+  <text x="676" y="130" fill="#8b9cb3" font-size="11" font-family="Segoe UI, sans-serif">»ÃÈ¢Ã×Œk</text>
+  <text x="676" y="152" fill="#5b9fd4" font-size="13" font-family="Consolas, monospace">open-dashboard.mjs</text>
+  <rect x="24" y="184" width="912" height="88" rx="12" fill="#243044" stroke="#2d3a4f" opacity="0.9"/>
+  <text x="40" y="210" fill="#8b9cb3" font-size="12" font-family="Segoe UI, sans-serif">@KĞH</text>
+  <text x="40" y="238" fill="#e7ecf3" font-size="16" font-weight="600" font-family="Segoe UI, sans-serif">Sample Task Titlesample-side-work	</text>
+  <text x="40" y="258" fill="#8b9cb3" font-size="12" font-family="Segoe UI, sans-serif">P1 · Ÿ½- · *H=Ø</text>
+  <rect x="24" y="288" width="912" height="36" rx="8" fill="#1a2332" stroke="#2d3a4f"/>
+  <text x="40" y="310" fill="#8b9cb3" font-size="13" font-family="Segoe UI, sans-serif">"&  |  Yyf  |  sample-side-work  |  sample-product  |  &</text>
+  <rect x="24" y="340" width="912" height="176" rx="12" fill="#1a2332" stroke="#2d3a4f"/>
+  <text x="40" y="368" fill="#e7ecf3" font-size="14" font-weight="600" font-family="Segoe UI, sans-serif">Wiki Á§Ã¯ÜÃ¯¹Backroom *­	</text>
+  <text x="40" y="400" fill="#8b9cb3" font-size="13" font-family="Segoe UI, sans-serif"> µó×ë TODO î  sample-company/operations L12</text>
+  <text x="40" y="428" fill="#8b9cb3" font-size="13" font-family="Segoe UI, sans-serif"> %×í¸§¯Èn TODO  sample-product/_index L24</text>
+  <text x="480" y="500" fill="#7c6cf0" font-size="14" font-family="Segoe UI, sans-serif">@wiki-todo-query gŸ›nÀÃ·åÜüÉ’‹O</text>
+</svg>

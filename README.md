@@ -1,12 +1,23 @@
 # my-atelier-vault
 
-Obsidian Wiki + Cursor Agent Skills の **fork 用テンプレート**です。  
+Obsidian Wiki + Agent Skills の **fork 用テンプレート**です。  
+**Cursor** · **VS Code（GitHub Copilot）** · **Claude Code** から Skills を呼び出せます。  
 Backroom に制作ログ・タスクを書き、Wiki TODO ダッシュボードで横断管理し、必要なら [Gallery](https://github.com/YUzushio/yuzushio.github.io) へ公開します。
 
 - **テンプレリポ:** このリポジトリ（`YUzushio/my-atelier-vault`）
 - **作者の private 正本:** 別リポ [`atelier-vault`](https://github.com/YUzushio/atelier-vault)（非公開運用想定）
 
 Copyright (c) YUzushio · [MIT License](LICENSE)
+
+### 対応エディタ
+
+| エディタ | Skills の場所 | 使い方 |
+|---------|--------------|--------|
+| **Cursor** | [`.cursor/skills/`](.cursor/skills/) | チャットで `@wiki-setup` 等 |
+| **Claude Code** | [`.claude/skills/`](.claude/skills/)（`.cursor/skills/` と同内容） | チャットで `@wiki-setup` 等 |
+| **VS Code + GitHub Copilot** | [`.cursor/skills/*/SKILL.md`](.cursor/skills/) | Copilot Chat で SKILL を `@` 参照、またはファイルパスを指定 |
+
+Skills の正本は `.cursor/skills/` です。Claude Code 向けに `.claude/skills/` へ同じ内容を置いています。
 
 ---
 
@@ -15,13 +26,16 @@ Copyright (c) YUzushio · [MIT License](LICENSE)
 ### 1. Fork & clone
 
 1. [YUzushio/my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) を GitHub で **fork**
-2. clone して Cursor / Obsidian で開く
+2. clone して **Cursor / VS Code / Claude Code** および **Obsidian** で開く
 
 ### 2. セットアップ
 
 **A. Agent Skill（推奨）**
 
-Cursor で `@wiki-setup` と入力し、対話に従う。
+| エディタ | 操作 |
+|---------|------|
+| Cursor / Claude Code | `@wiki-setup` と入力し、対話に従う |
+| VS Code + Copilot | `.cursor/skills/wiki-setup/SKILL.md` を Chat で参照し、同手順を実行 |
 
 **B. スクリプト**
 
@@ -61,7 +75,8 @@ node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs
 | `Gallery Prep/` | Gallery 公開前の下書き・素材（任意） |
 | `Reference/` | タスク管理・朝ブリーフィング情報源 |
 | `Templates/` | タスク・セッションログ等 |
-| `.cursor/skills/` | Cursor Agent Skills |
+| `.cursor/skills/` | Agent Skills（Cursor · VS Code Copilot 参照用） |
+| `.claude/skills/` | Agent Skills（Claude Code 用 · 上記と同内容） |
 
 ### サンプルプロジェクト（テンプレ）
 
@@ -77,6 +92,8 @@ node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs
 ---
 
 ## Agent Skills
+
+Cursor · Claude Code では `@skill名`、VS Code Copilot では各 `SKILL.md` を参照。
 
 | Skill | 用途 |
 |-------|------|
@@ -94,7 +111,7 @@ node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs
 node .cursor/skills/wiki-setup-advanced/scripts/setup-advanced.mjs
 ```
 
-デフォルトは **スキップで OK**。Calendar · GitLab · GitHub の Cursor MCP 設定を案内します。
+デフォルトは **スキップで OK**。Calendar · GitLab · GitHub の MCP 設定を案内します（Cursor / Claude Code の MCP、Copilot 拡張機能は各エディタの設定 UI から）。
 
 ---
 
