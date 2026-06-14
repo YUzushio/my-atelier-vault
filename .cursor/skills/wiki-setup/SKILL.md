@@ -3,7 +3,8 @@ name: wiki-setup
 description: >-
   First-time setup for my-atelier-vault after fork or clone. Use when the user
   says setup, セットアップ, 初めて使う, fork した, my-atelier-vault を自分用に,
-  or @wiki-setup.
+  or @wiki-setup. After basic setup, optionally offer @wiki-setup-advanced for
+  MCP integrations (default skip).
 ---
 
 # Wiki Setup
@@ -20,13 +21,18 @@ fork / clone 直後に **my-atelier-vault** を自分用に初期化する。
 
 ### 1. 対話セットアップ（推奨）
 
-リポジトリルートから:
-
 ```bash
 node .cursor/skills/wiki-setup/scripts/setup.mjs
 ```
 
 質問に答えると `vault.config.json` を生成し、`Backroom/` のプレースホルダを置換する。
+
+**最後に 1 回だけ質問:**
+
+> MCP 連携（Google Calendar / GitLab / GitHub）も設定しますか？ **[y/N] デフォルト N**
+
+- **いいえ / Enter** → 基本セットアップのみで完了（問題なし）
+- **はい** → `@wiki-setup-advanced`（`setup-advanced.mjs`）へ続行
 
 ### 2. 非対話（CI / エージェント）
 
@@ -38,13 +44,14 @@ node .cursor/skills/wiki-setup/scripts/setup.mjs --non-interactive \
   --vault-name "My Atelier Vault"
 ```
 
+非対話では **MCP 連携はスキップ**（デフォルト）。必要なら後から `@wiki-setup-advanced`。
+
 ### 3. Obsidian
 
 1. このフォルダを vault として開く
 2. **Settings → Community plugins → Turn off restricted mode**
 3. **Obsidian Git** をインストール
 4. Remote URL を `vault.config.json` の `gitRemote` に設定
-5. 初回: `Obsidian Git: Pull` → 以降 auto sync を好みで設定
 
 ### 4. 動作確認
 
@@ -53,31 +60,33 @@ node .cursor/skills/wiki-todo-query/scripts/collect-todos.mjs
 node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs --build
 ```
 
-ブラウザ表示: `open-dashboard.mjs`（引数なし）
-
 ### 5. Gallery（任意）
 
-公開ポートフォリオは別リポ:
-
 - テンプレ fork: [YUzushio/yuzushio.github.io](https://github.com/YUzushio/yuzushio.github.io)
-- 公開例: [yuzushio.github.io](https://yuzushio.github.io/)
-- Wiki 側: `@gallery-vault-sender` · Gallery 側: `@gallery-vault-receiver`
+- Wiki: `@gallery-vault-sender` · Gallery: `@gallery-vault-receiver`
+
+### 6. Advanced（任意 · 後からでも可）
+
+MCP 連携: **`@wiki-setup-advanced`**
+
+```bash
+node .cursor/skills/wiki-setup-advanced/scripts/setup-advanced.mjs
+```
 
 ## 生成ファイル
 
 | ファイル | git |
 |---------|-----|
-| `vault.config.json` | **ignore**（個人設定） |
-| `vault.config.example.json` | コミット済みテンプレ |
+| `vault.config.json` | **ignore** |
+| `vault.config.example.json` | テンプレ |
 
 ## やらないこと
 
-- ユーザーの private 正本（別リポ `atelier-vault`）を触らない
-- `vault.config.json` を commit しない
-- 秘密情報を Wiki に書かない
+- MCP 連携をユーザー未確認で強制する
+- `vault.config.json` を commit する
+- 秘密情報を Wiki に書く
 
 ## 参照
 
-- リポ README
+- `@wiki-setup-advanced` — Google Calendar / GitLab / GitHub MCP
 - `@wiki-todo-query` — TODO ダッシュボード
-- `@gallery-vault-sender` — Gallery export 準備

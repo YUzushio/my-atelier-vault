@@ -78,9 +78,20 @@ node .cursor/skills/wiki-todo-query/scripts/open-dashboard.mjs
 | Skill | 用途 |
 |-------|------|
 | `@wiki-setup` | fork 直後の初回セットアップ |
+| `@wiki-setup-advanced` | **任意** — Google Calendar / GitLab / GitHub MCP 連携 |
 | `@wiki-todo-query` | Backroom 横断 TODO · ダッシュボード |
 | `@gallery-vault-sender` | Wiki → Gallery 送信側メタ整備 |
 | `@morning-briefing` | おはようブリーフィング |
+
+### Advanced MCP（任意）
+
+基本セットアップ後、必要な場合のみ:
+
+```bash
+node .cursor/skills/wiki-setup-advanced/scripts/setup-advanced.mjs
+```
+
+デフォルトは **スキップで OK**。Calendar · GitLab · GitHub の Cursor MCP 設定を案内します。
 
 ---
 

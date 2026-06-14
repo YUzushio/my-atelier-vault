@@ -42,17 +42,32 @@ function ask(rl, question, defaultValue = "") {
   });
 }
 
+function askYesNo(rl, question, defaultYes = false) {
+  const hint = defaultYes ? " [Y/n]" : " [y/N]";
+  return new Promise((resolve) => {
+    rl.question(`${question}${hint}: `, (answer) => {
+      const a = answer.trim().toLowerCase();
+      if (!a) return resolve(defaultYes);
+      resolve(a === "y" || a === "yes");
+    });
+  });
+}
+
 async function promptConfig(opts) {
   const example = JSON.parse(fs.readFileSync(EXAMPLE_CONFIG, "utf8"));
   if (opts.nonInteractive && opts.author && opts.homeRoot) {
     return {
-      vaultName: opts.vaultName || example.vaultName,
-      author: opts.author,
-      homeRoot: opts.homeRoot.replace(/\\/g, "/"),
-      gitRemote: opts.gitRemote || example.gitRemote,
-      galleryRepo: opts.galleryRepo || example.galleryRepo,
-      gallerySiteUrl: opts.gallerySiteUrl || example.gallerySiteUrl,
-      projectPriorities: example.projectPriorities,
+      config: {
+        vaultName: opts.vaultName || example.vaultName,
+        author: opts.author,
+        homeRoot: opts.homeRoot.replace(/\\/g, "/"),
+        gitRemote: opts.gitRemote || example.gitRemote,
+        galleryRepo: opts.galleryRepo || example.galleryRepo,
+        gallerySiteUrl: opts.gallerySiteUrl || example.gallerySiteUrl,
+        projectPriorities: example.projectPriorities,
+        integrations: example.integrations,
+      },
+      wantAdvanced: false,
     };
   }
 
@@ -67,9 +82,15 @@ async function promptConfig(opts) {
     galleryRepo: await ask(rl, "Gallery リポ URL（任意）", opts.galleryRepo || example.galleryRepo),
     gallerySiteUrl: await ask(rl, "Gallery 公開 URL（任意）", opts.gallerySiteUrl || example.gallerySiteUrl),
     projectPriorities: example.projectPriorities,
+    integrations: example.integrations || undefined,
   };
+  const wantAdvanced = await askYesNo(
+    rl,
+    "基本セットアップ後に MCP 連携（Google Calendar / GitLab / GitHub）も設定しますか？",
+    false
+  );
   rl.close();
-  return config;
+  return { config, wantAdvanced };
 }
 
 function applyReplacements(content, replacements) {
@@ -123,7 +144,7 @@ async function main() {
     process.exit(0);
   }
 
-  const config = await promptConfig(opts);
+  const { config, wantAdvanced } = await promptConfig(opts);
   fs.writeFileSync(CONFIG_PATH, `${JSON.stringify(config, null, 2)}\n`, "utf8");
   console.log(`Wrote ${CONFIG_PATH}`);
 
@@ -143,6 +164,16 @@ async function main() {
   console.log("2. Community plugins → Obsidian Git → remote:", config.gitRemote);
   console.log("3. @wiki-todo-query — open-dashboard.mjs でダッシュボード");
   console.log("4. Gallery: https://github.com/YUzushio/yuzushio.github.io");
+
+  if (wantAdvanced) {
+    console.log("\n--- Advanced MCP setup ---");
+    const advanced = path.join(VAULT_ROOT, ".cursor/skills/wiki-setup-advanced/scripts/setup-advanced.mjs");
+    execFileSync(process.execPath, [advanced], { stdio: "inherit", cwd: VAULT_ROOT });
+  } else if (!opts.nonInteractive) {
+    console.log("\nMCP 連携（Calendar / GitLab / GitHub）はスキップしました。");
+    console.log("  後から: @wiki-setup-advanced または");
+    console.log("  node .cursor/skills/wiki-setup-advanced/scripts/setup-advanced.mjs");
+  }
 }
 
 main().catch((err) => {

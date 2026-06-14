@@ -28,6 +28,7 @@ Skill: `.cursor/skills/morning-briefing/`
 |---------|------|
 | クライアント報告 | [[sample-side-work/_index]] |
 | 定期経理 | [[sample-company/operations]] |
+| Google Calendar MCP | [[Backroom/sample-company/calendar]]（`@wiki-setup-advanced` 後） |
 | Vault → Gallery | `.cursor/skills/gallery-vault-sender/SKILL.md` |
 
 ## Web 検索クエリ（プレースホルダ）

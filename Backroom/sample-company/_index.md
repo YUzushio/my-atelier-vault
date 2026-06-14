@@ -23,6 +23,7 @@ Gallery には公開してよい成果だけ載せます。
 ## 関連ノート
 
 - [[operations]] — 定期タスク・TODO
+- [[calendar]] — Google Calendar MCP（任意 · `@wiki-setup-advanced`）
 - [[tasks/website-update]] — HP 更新タスク
 
 ## TODO

@@ -11,5 +11,22 @@
     "sample-company": 3,
     "sample-open-project": 4,
     "sample-sns-hub": 4
+  },
+  "integrations": {
+    "googleCalendar": {
+      "enabled": false,
+      "calendarName": "",
+      "credentialsDir": "",
+      "wikiNote": "Backroom/sample-company/calendar.md"
+    },
+    "gitlab": {
+      "enabled": false,
+      "host": "https://gitlab.com",
+      "groupPath": ""
+    },
+    "github": {
+      "enabled": false,
+      "defaultRepo": ""
+    }
   }
 }
