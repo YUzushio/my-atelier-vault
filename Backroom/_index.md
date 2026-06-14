@@ -4,7 +4,8 @@ visibility: private
 
 # Backroom
 
-Wiki の本体。Open / Private / Closed で、制作・記録をここに書く。
+Wiki の本体。Open / Private / Closed で、制作・記録をここに書く。  
+音楽 · イラスト · 動画 · 開発 · 記事 · 書籍（同人誌など）— 分野をまたいだプロジェクトを索引する。
 
 ## Projects
 
