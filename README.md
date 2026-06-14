@@ -6,7 +6,7 @@ Obsidian で Backroom に制作ログ・タスクを書き、Agent Skills（**Cu
 
 ![Obsidian — Backroom 索引（`Backroom/_index.md`）](docs/images/obsidian-backroom-example.png)
 
-*Obsidian で Vault を開いた画面 — Open / Private / Closed でプロジェクトを索引（公開例: 作者の [Atelier-Vault](https://github.com/YUzushio/atelier-vault)）*
+*Obsidian で Vault を開いた画面 — Open / Private / Closed でプロジェクトを索引*
 
 ![Wiki TODO Dashboard — 概要（統計 · 着手提案 · フィルタ）](docs/images/wiki-todo-dashboard-overview.png)
 
@@ -15,9 +15,6 @@ Obsidian で Backroom に制作ログ・タスクを書き、Agent Skills（**Cu
 [![YUzushio Gallery — Feed 画面の例](docs/images/gallery-feed-example.png)](https://yuzushio.github.io/)
 
 *Gallery — 公開サイト [yuzushio.github.io](https://yuzushio.github.io/) · テンプレは [GitHub で fork](https://github.com/YUzushio/yuzushio.github.io/fork)（`github.com/YUzushio/yuzushio.github.io`）*
-
-- **テンプレリポ（Wiki）:** [github.com/YUzushio/my-atelier-vault](https://github.com/YUzushio/my-atelier-vault) → [GitHub で fork](https://github.com/YUzushio/my-atelier-vault/fork)
-- **作者の private 正本:** 別リポ [`atelier-vault`](https://github.com/YUzushio/atelier-vault)（非公開運用想定）
 
 Copyright (c) YUzushio · [MIT License](LICENSE)
 
