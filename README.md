@@ -1,13 +1,27 @@
 # my-atelier-vault
 
-Obsidian Wiki + Agent Skills の **fork 用テンプレート**です。  
-**Cursor** · **VS Code（GitHub Copilot）** · **Claude Code** から Skills を呼び出せます。  
-Backroom に制作ログ・タスクを書き、Wiki TODO ダッシュボードで横断管理し、必要なら [Gallery](https://github.com/YUzushio/yuzushio.github.io) へ公開します。
+**様々な分野・プロジェクトに手を出す人向け**の、自己作業管理 Wiki テンプレートです。  
+Obsidian で Backroom に制作ログ・タスクを書き、Agent Skills（**Cursor** · **VS Code（GitHub Copilot）** · **Claude Code**）で横断管理。  
+[Gallery](https://github.com/YUzushio/yuzushio.github.io) 連携機能付き — **個人ポートフォリオと作業管理をひとつの Vault で整理できる**のが強みです。
 
 - **テンプレリポ:** このリポジトリ（`YUzushio/my-atelier-vault`）
 - **作者の private 正本:** 別リポ [`atelier-vault`](https://github.com/YUzushio/atelier-vault)（非公開運用想定）
 
 Copyright (c) YUzushio · [MIT License](LICENSE)
+
+## こんな人向け
+
+- 副業・本業・趣味・OSS など **複数プロジェクトを並行**している
+- タスク・経緯・未整理メモが **ツールやフォルダに散らばりがち**
+- **公開用ポートフォリオ**（Gallery）と **非公開の作業ログ**（Backroom）を分けつつ、メタデータは Wiki を正本にしたい
+
+| 層 | 役割 | 例 |
+|----|------|-----|
+| **Backroom** | 作業管理の正本（private / open / closed） | タスク台帳 · 進捗ログ · TODO |
+| **Gallery** | 公開ポートフォリオ（fork 別リポ） | SNS · 作品 · 同人 · Web プロダクト |
+| **Vault → Gallery** | `@gallery-vault-sender` → `@gallery-vault-receiver` | Wiki で整えたメタを JSON に反映 |
+
+Wiki TODO ダッシュボードでプロジェクト横断の未完了を一覧し、朝ブリーフィング（`@morning-briefing`）で「今日何に着手するか」までつなげられます。
 
 ### 対応エディタ
 
